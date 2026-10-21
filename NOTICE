@@ -1,0 +1,21 @@
+workerd-campfire-bench
+
+Independent chat-runtime experiments inspired by Basecamp Campfire.
+Derived from celld-campfire-bench by Yunfei He, licensed under Apache-2.0:
+https://github.com/hyfdev/celld-campfire-bench/tree/439b240573074e3171166fa7286dda117f5b595d
+
+workerd
+Copyright Cloudflare, Inc.
+
+The runtime patch adapts Worker dispatch and actor access to run the
+chat application through native V8 Wasm callbacks. Measured source
+snapshots retain upstream copyright and license headers. workerd is
+licensed under Apache-2.0; see LICENSE and:
+https://github.com/cloudflare/workerd/tree/781048bc05cb205c92e503c1062ef3266ab959b5
+
+once-campfire-rust
+
+The original-application comparison builds Basecamp's unmodified Rust
+implementation of Campfire. Its source snapshots retain the upstream
+MIT-LICENSE at results/2026-10-21-basecamp/sources/.build/basecamp-source/MIT-LICENSE.
+https://github.com/basecamp/once-campfire-rust/tree/6dae2fd3c1a2dce61ca11beb731bcce2b42b67ad

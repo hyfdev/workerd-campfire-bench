@@ -1,0 +1,14 @@
+name: Verify recorded results
+
+on: [push, pull_request]
+
+jobs:
+  reports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 workerd/report.py --check --readme
+      - run: python3 basecamp/report.py --check --readme
